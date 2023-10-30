@@ -16,55 +16,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magicalDay" translatesAutoresizingMaskIntoConstraints="NO" id="cU0-iS-3rG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magicalDay" translatesAutoresizingMaskIntoConstraints="NO" id="cU0-iS-3rG">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHe-uJ-YWK">
-                                <rect key="frame" x="76" y="122" width="241" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="How's Today?">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="35" name="Optima-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hel-U7-aYM">
-                                <rect key="frame" x="89" y="533" width="214" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" strokeWidth="2.5">
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Let's Check">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="25" name="HelveticaNeue-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="checkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnB-JT-1Dn"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quote1" translatesAutoresizingMaskIntoConstraints="NO" id="P4F-fF-fUc">
-                                <rect key="frame" x="31" y="205" width="330" height="176"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="Tu8-Ju-T22">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MVJ-m1-Il4" userLabel="topView">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="216.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHe-uJ-YWK">
+                                                <rect key="frame" x="92.333333333333314" y="87.333333333333343" width="208.66666666666669" height="41.666666666666657"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="How's Today?">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="35" name="Optima-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="qHe-uJ-YWK" firstAttribute="centerX" secondItem="MVJ-m1-Il4" secondAttribute="centerX" id="6Kt-tf-t3Y"/>
+                                            <constraint firstItem="qHe-uJ-YWK" firstAttribute="centerY" secondItem="MVJ-m1-Il4" secondAttribute="centerY" id="eqF-Y0-dwh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3S-8Z-X1T" userLabel="midView">
+                                        <rect key="frame" x="0.0" y="271.33333333333331" width="393" height="216.33333333333331"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quote1" translatesAutoresizingMaskIntoConstraints="NO" id="P4F-fF-fUc">
+                                                <rect key="frame" x="92.666666666666686" y="58.333333333333371" width="208" height="100"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="P4F-fF-fUc" firstAttribute="centerX" secondItem="a3S-8Z-X1T" secondAttribute="centerX" id="XQW-S4-sqv"/>
+                                            <constraint firstItem="P4F-fF-fUc" firstAttribute="centerY" secondItem="a3S-8Z-X1T" secondAttribute="centerY" id="fmM-nn-fl2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N7E-ty-JGF" userLabel="bottomView">
+                                        <rect key="frame" x="0.0" y="542.66666666666663" width="393" height="216.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hel-U7-aYM">
+                                                <rect key="frame" x="113.66666666666669" y="86.333333333333371" width="166" height="44"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <backgroundConfiguration key="background" strokeWidth="2.5">
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="strokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Let's Check">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="25" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="checkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fnB-JT-1Dn"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Hel-U7-aYM" firstAttribute="centerX" secondItem="N7E-ty-JGF" secondAttribute="centerX" id="FEG-G3-6li"/>
+                                            <constraint firstItem="Hel-U7-aYM" firstAttribute="centerY" secondItem="N7E-ty-JGF" secondAttribute="centerY" id="ols-df-UDA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cU0-iS-3rG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DSe-iP-bzb"/>
+                            <constraint firstItem="cU0-iS-3rG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="GiX-QI-AAQ"/>
+                            <constraint firstItem="cU0-iS-3rG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U2Q-5U-aCs"/>
+                            <constraint firstItem="Tu8-Ju-T22" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UwU-6C-JlX"/>
+                            <constraint firstAttribute="bottom" secondItem="cU0-iS-3rG" secondAttribute="bottom" id="Z3p-j6-EzE"/>
+                            <constraint firstItem="Tu8-Ju-T22" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k3H-9t-B1V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tu8-Ju-T22" secondAttribute="bottom" id="zMe-t8-gBd"/>
+                            <constraint firstItem="Tu8-Ju-T22" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zQV-lv-3wW"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lineToday" destination="P4F-fF-fUc" id="4bw-Hr-Jfg"/>
